@@ -1,12 +1,11 @@
 $negro: rgba(34,34,34,1);
-$negro90: rgba(34,34,34,0.9);
+$negro80: rgba(34,34,34,0.8);
 $negro50: rgba(34,34,34,0.5);
 $negro10: rgba(34,34,34,0.1);
 $blanco: rgba(255,255,255,1);
 $blanco50: rgba(255,255,255,0.5);
 $blanco20: rgba(255,255,255,0.2);
 $blanco10: rgba(255,255,255,0.1);
-$gris: rgb(94, 94, 94);
 
 @mixin icon-btn {
     max-height: 48px;

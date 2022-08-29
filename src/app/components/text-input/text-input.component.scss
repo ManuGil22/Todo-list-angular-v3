@@ -3,7 +3,6 @@
 .input {
     background-color: inherit;
     border: none;
-    font-size: 20px;
     padding: 0;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -12,5 +11,9 @@
 
     &:focus{
         outline:none;
+    }
+
+    &::placeholder{
+        color: $blanco50;
     }
 }
