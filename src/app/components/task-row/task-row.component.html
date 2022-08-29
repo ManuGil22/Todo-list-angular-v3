@@ -1,5 +1,7 @@
 <div class="task-container">
     <app-checkbox class="checkbox" (isChecked)="isTaskCompleted($event)"></app-checkbox>
     <app-task taskDescription="{{taskDescription}}" completedTask="{{taskCompleted}}"></app-task>
-    <app-delete-btn class="delete-btn" (click)="getTaskId()"></app-delete-btn>
+    <div class="icons-container">
+        <app-delete-btn class="delete-btn" (click)="getTaskId()"></app-delete-btn>
+    </div>
 </div>

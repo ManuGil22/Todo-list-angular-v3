@@ -1,5 +1,6 @@
 <div class="main">
   <app-header></app-header>
   <app-add-task (newTask)="getNewTask($event)"></app-add-task>
+  <div class="divider"></div>
   <app-task-list [taskList]="tasksArray" (deleteTask)="deleteTaskById($event)"></app-task-list>
 </div>

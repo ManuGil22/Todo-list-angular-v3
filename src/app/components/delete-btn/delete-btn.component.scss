@@ -1,8 +1,15 @@
-svg{
-    width: 20px;
-    height: 20px;
+@import '/src/app/stylesheets/global.scss';
+
+.icon-container{
+    @include icon-btn;
+    padding: 8px;
+    margin: 0;
 }
 
 .icon-container:hover{
     cursor: pointer;
+}
+
+svg{
+    margin: 3px;
 }

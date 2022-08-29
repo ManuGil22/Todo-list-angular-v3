@@ -1,16 +1,7 @@
 @import '/src/app/stylesheets/global.scss';
 
 .btn {
-    height: 48px;
-    font-size: 24px;
-    border: 1px solid $blanco;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    margin: 8px;
-    background-color: inherit;
+    @include icon-btn;
 }
 
 .btn:hover{

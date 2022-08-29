@@ -1,7 +1,11 @@
+@import '/src/app/stylesheets/global.scss';
+
 .task {
+    @include font-family;
+    color: $blanco;
     margin: 0;
-    padding: 10px 0;
-    font-size: 20px;
+    font-size: 24px;
+    overflow-wrap: anywhere;
 }
 
 .completed-task{

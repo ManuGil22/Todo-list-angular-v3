@@ -1,2 +1,2 @@
-<input type="text" class="input" (change)="handleNewTaskEvent($event)" (keydown.enter)="handleNewTaskEvent($event)"
-    autofocus>
+<input type="text" placeholder="{{ sticky == 'true' ? 'Write a task...' : '' }}" class="input"
+    (change)="handleNewTaskEvent($event)" (keydown.enter)="handleNewTaskEvent($event)" autofocus>

@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class TextInputComponent implements OnInit {
   @Output() newTask = new EventEmitter<string>();
+  @Input() sticky = 'false';
 
   constructor() { }
 

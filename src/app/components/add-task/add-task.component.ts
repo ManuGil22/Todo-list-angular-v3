@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-add-task',
@@ -8,6 +8,13 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class AddTaskComponent implements OnInit {
   @Output() newTask = new EventEmitter<string>();
   newTaskDescription = '';
+
+  scrolled: boolean = false;
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+      this.scrolled = window.scrollY > 170;
+  }
 
   constructor() { }
 
@@ -24,5 +31,6 @@ export class AddTaskComponent implements OnInit {
   newTaskHandler(newTask: any){
     this.newTaskDescription = newTask;
   }
+
 
 }

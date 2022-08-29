@@ -1,4 +1,46 @@
-input{
-    width: 20px;
-    height: 20px;
+@import '/src/app/stylesheets/global.scss';
+
+.checkbox {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
 }
+
+.checkbox > span {
+    color: $blanco;
+}
+
+.checkbox > input {
+    margin: 0 8px 0 0;
+    height: 24px;
+    width: 24px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 2px solid $blanco;
+    outline: none;
+    transition-duration: 0.3s;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+.checkbox > input:checked {
+    border: 2px solid $blanco;
+    background-color: inherit;
+}
+
+.checkbox > input:checked + span::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='20' height='20'%3E%3Cpath fill-rule='evenodd' fill='white' d='M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z'%3E%3C/path%3E%3C/svg%3E");
+    display: block;
+    text-align: center;
+    color: $blanco;
+    position: absolute;
+    left: 0.16rem;
+    top: 0.14rem;
+}
+
+.checkbox > input:active {
+    border: 2px solid $blanco;
+}
+

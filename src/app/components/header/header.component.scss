@@ -1,7 +1,9 @@
+@import '/src/app/stylesheets/global.scss';
+
 .header{
+    @include font-family;
     padding: 0px 8px;
     margin: 36px 0;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 36px;
     color: white;
