@@ -1,0 +1,16 @@
+.task-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 0 10px;
+    display: flex;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.delete-btn {
+    margin-left: auto;
+}
