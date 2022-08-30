@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-btn',
@@ -6,6 +6,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./btn.component.scss']
 })
 export class BtnComponent implements OnInit {
+  @Input() svg = '';
+  @Input() taskIcon = 'false';
   constructor() { }
 
   ngOnInit(): void {

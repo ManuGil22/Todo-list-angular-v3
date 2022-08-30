@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     padding: 8px;
+    padding-right: 0;
     margin-top: 16px;
     display: flex;
     background-color: $blanco20;
@@ -11,10 +12,7 @@
 }
 
 .icons-container {
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
+    @include icons-container;
 }
 
 app-checkbox{

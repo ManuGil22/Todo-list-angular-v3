@@ -16,7 +16,7 @@ export class AddTaskComponent implements OnInit {
       this.scrolled = window.scrollY > 170;
   }
 
-  constructor() { }
+  constructor() {  }
 
   ngOnInit(): void {
   }

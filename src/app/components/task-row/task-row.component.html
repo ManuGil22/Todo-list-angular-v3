@@ -2,6 +2,8 @@
     <app-checkbox class="checkbox" (isChecked)="isTaskCompleted($event)"></app-checkbox>
     <app-task taskDescription="{{taskDescription}}" completedTask="{{taskCompleted}}"></app-task>
     <div class="icons-container">
-        <app-delete-btn class="delete-btn" (click)="getTaskId()"></app-delete-btn>
+        <app-btn svg="/assets/svg/calendarBtn.svg" taskIcon="true"></app-btn>
+        <app-btn svg="/assets/svg/shareBtn.svg" taskIcon="true"></app-btn>
+        <app-btn (click)="getTaskId()" svg="/assets/svg/deleteBtn.svg" taskIcon="true"></app-btn>
     </div>
 </div>

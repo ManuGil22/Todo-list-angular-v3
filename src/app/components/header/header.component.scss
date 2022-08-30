@@ -8,3 +8,13 @@
     font-size: 36px;
     color: white;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icons-container {
+    @include icons-container;
+}
