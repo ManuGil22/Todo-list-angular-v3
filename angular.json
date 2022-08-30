@@ -35,6 +35,11 @@
           },
           "configurations": {
             "production": {
+              "assets": [
+                "src/favicon.ico",
+                "src/Todo-list-angular-v3/assets",
+                "src/Todo-list-angular-v3/assets/svg"
+              ],
               "budgets": [
                 {
                   "type": "initial",
