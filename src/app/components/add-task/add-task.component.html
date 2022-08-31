@@ -1,5 +1,5 @@
 <div class="add-task-section" [ngClass]="{ sticky:scrolled }">
     <app-text-input (newTask)="newTaskHandler($event)" (keydown.enter)="clickedHandler()" sticky="{{scrolled}}">
     </app-text-input>
-    <app-btn (click)="clickedHandler()" svg="/assets/svg/addBtn.svg"></app-btn>
+    <app-btn (click)="clickedHandler()" svg="./assets/svg/addBtn.svg"></app-btn>
 </div>
